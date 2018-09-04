@@ -1,0 +1,382 @@
+GAMS 24.7.4  r58773 Released Sep 19, 2016 WEX-WEI x86 64bit/MS Windows 09/03/18 17:10:57 Page 1
+Dynamic system optimal problem
+C o m p i l a t i o n
+
+
+   2   
+
+
+COMPILATION TIME     =        0.000 SECONDS      3 MB  24.7.4 r58773 WEX-WEI
+GAMS 24.7.4  r58773 Released Sep 19, 2016 WEX-WEI x86 64bit/MS Windows 09/03/18 17:10:57 Page 2
+Dynamic system optimal problem
+Model Statistics    SOLVE so Using MIP From line 184
+
+
+MODEL STATISTICS
+
+BLOCKS OF EQUATIONS           6     SINGLE EQUATIONS          346
+BLOCKS OF VARIABLES           3     SINGLE VARIABLES          441
+NON ZERO ELEMENTS         1,307     DISCRETE VARIABLES        400
+
+
+GENERATION TIME      =        0.016 SECONDS      4 MB  24.7.4 r58773 WEX-WEI
+
+
+EXECUTION TIME       =        0.016 SECONDS      4 MB  24.7.4 r58773 WEX-WEI
+GAMS 24.7.4  r58773 Released Sep 19, 2016 WEX-WEI x86 64bit/MS Windows 09/03/18 17:10:57 Page 3
+Dynamic system optimal problem
+Solution Report     SOLVE so Using MIP From line 184
+
+
+               S O L V E      S U M M A R Y
+
+     MODEL   so                  OBJECTIVE  z
+     TYPE    MIP                 DIRECTION  MINIMIZE
+     SOLVER  CPLEX               FROM LINE  184
+
+**** SOLVER STATUS     1 Normal Completion         
+**** MODEL STATUS      1 Optimal                   
+**** OBJECTIVE VALUE               63.0000
+
+ RESOURCE USAGE, LIMIT          0.094      1000.000
+ ITERATION COUNT, LIMIT        60    2000000000
+
+IBM ILOG CPLEX   24.7.4 r58773 Released Sep 19, 2016 WEI x86 64bit/MS Windows 
+--- GAMS/Cplex licensed for continuous and discrete problems.
+Cplex 12.6.3.0
+
+Space for names approximately 0.02 Mb
+Use option 'names no' to turn use of names off
+MIP status(101): integer optimal solution
+Cplex Time: 0.09sec (det. 4.51 ticks)
+Fixing integer variables, and solving final LP...
+Fixed MIP status(1): optimal
+Cplex Time: 0.00sec (det. 0.25 ticks)
+Proven optimal solution.
+
+MIP Solution:           63.000000    (60 iterations, 0 nodes)
+Final Solve:            63.000000    (0 iterations)
+
+Best possible:          63.000000
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+
+
+**** REPORT SUMMARY :        0     NONOPT
+                             0 INFEASIBLE
+                             0  UNBOUNDED
+GAMS 24.7.4  r58773 Released Sep 19, 2016 WEX-WEI x86 64bit/MS Windows 09/03/18 17:10:57 Page 4
+Dynamic system optimal problem
+E x e c u t i o n
+
+
+----    185 VARIABLE z.L                   =       63.000  
+
+----    186 VARIABLE x.L  
+
+INDEX 1 = 1  INDEX 2 = 1
+
+              1
+
+2.0       1.000
+
+INDEX 1 = 1  INDEX 2 = 2
+
+              2
+
+6.1       1.000
+
+INDEX 1 = 1  INDEX 2 = 4
+
+              8           9
+
+4.7       1.000
+4.8                   1.000
+
+INDEX 1 = 1  INDEX 2 = 6
+
+              7
+
+4.2       1.000
+
+INDEX 1 = 2  INDEX 2 = 1
+
+              4
+
+7.0       1.000
+
+INDEX 1 = 2  INDEX 2 = 3
+
+              6
+
+4.5       1.000
+
+INDEX 1 = 2  INDEX 2 = 4
+
+              7           8           9
+
+4.6       1.000
+4.7                   1.000
+4.8                               1.000
+
+INDEX 1 = 2  INDEX 2 = 7
+
+              5
+
+3.4       1.000
+
+INDEX 1 = 3  INDEX 2 = 1
+
+              1
+
+2.0       1.000
+
+INDEX 1 = 3  INDEX 2 = 2
+
+              2
+
+6.1       1.000
+
+INDEX 1 = 3  INDEX 2 = 4
+
+              8           9
+
+4.7       1.000
+4.8                   1.000
+
+INDEX 1 = 3  INDEX 2 = 6
+
+              7
+
+4.2       1.000
+
+INDEX 1 = 4  INDEX 2 = 1
+
+              4
+
+7.0       1.000
+
+INDEX 1 = 4  INDEX 2 = 3
+
+              8
+
+4.7       1.000
+
+INDEX 1 = 4  INDEX 2 = 4
+
+              9
+
+4.8       1.000
+
+INDEX 1 = 4  INDEX 2 = 7
+
+              5           6           7
+
+3.6                               1.000
+7.4       1.000
+7.5                   1.000
+
+INDEX 1 = 5  INDEX 2 = 1
+
+              1
+
+2.0       1.000
+
+INDEX 1 = 5  INDEX 2 = 2
+
+              2
+
+5.1       1.000
+
+INDEX 1 = 5  INDEX 2 = 3
+
+              5
+
+4.4       1.000
+
+INDEX 1 = 5  INDEX 2 = 4
+
+              6           7           8           9
+
+4.5       1.000
+4.6                   1.000
+4.7                               1.000
+4.8                                           1.000
+
+INDEX 1 = 5  INDEX 2 = 5
+
+              3
+
+8.2       1.000
+
+INDEX 1 = 5  INDEX 2 = 8
+
+              4
+
+3.3       1.000
+
+INDEX 1 = 6  INDEX 2 = 1
+
+              5
+
+7.1       1.000
+
+INDEX 1 = 6  INDEX 2 = 3
+
+              7
+
+4.6       1.000
+
+INDEX 1 = 6  INDEX 2 = 4
+
+              8           9
+
+4.7       1.000
+4.8                   1.000
+
+INDEX 1 = 6  INDEX 2 = 7
+
+              6
+
+3.5       1.000
+
+INDEX 1 = 7  INDEX 2 = 1
+
+              2
+
+2.1       1.000
+
+INDEX 1 = 7  INDEX 2 = 2
+
+              3
+
+5.2       1.000
+
+INDEX 1 = 7  INDEX 2 = 3
+
+              6
+
+4.5       1.000
+
+INDEX 1 = 7  INDEX 2 = 4
+
+              7           8           9
+
+4.6       1.000
+4.7                   1.000
+4.8                               1.000
+
+INDEX 1 = 7  INDEX 2 = 5
+
+              4
+
+8.3       1.000
+
+INDEX 1 = 7  INDEX 2 = 8
+
+              5
+
+3.4       1.000
+
+INDEX 1 = 8  INDEX 2 = 1
+
+              2
+
+2.1       1.000
+
+INDEX 1 = 8  INDEX 2 = 2
+
+              3
+
+6.2       1.000
+
+INDEX 1 = 8  INDEX 2 = 4
+
+              9
+
+4.8       1.000
+
+INDEX 1 = 8  INDEX 2 = 6
+
+              8
+
+4.3       1.000
+
+INDEX 1 = 9  INDEX 2 = 1
+
+              2
+
+2.1       1.000
+
+INDEX 1 = 9  INDEX 2 = 2
+
+              3
+
+6.2       1.000
+
+INDEX 1 = 9  INDEX 2 = 4
+
+              9
+
+4.8       1.000
+
+INDEX 1 = 9  INDEX 2 = 6
+
+              8
+
+4.3       1.000
+
+INDEX 1 = 10  INDEX 2 = 1
+
+              3
+
+2.2       1.000
+
+INDEX 1 = 10  INDEX 2 = 2
+
+              4
+
+5.3       1.000
+
+INDEX 1 = 10  INDEX 2 = 3
+
+              7
+
+4.6       1.000
+
+INDEX 1 = 10  INDEX 2 = 4
+
+              8           9
+
+4.7       1.000
+4.8                   1.000
+
+INDEX 1 = 10  INDEX 2 = 5
+
+              5
+
+8.4       1.000
+
+INDEX 1 = 10  INDEX 2 = 8
+
+              6
+
+3.5       1.000
+
+
+
+EXECUTION TIME       =        0.000 SECONDS      3 MB  24.7.4 r58773 WEX-WEI
+
+
+USER: School of Sustainable Engineering              G150407:1621AO-WIN
+      Arizona State University                                  DC11708
+      License for teaching and research at degree granting institutions
+
+
+**** FILE SUMMARY
+
+Input      C:\Jiawei\Course\simulation\Assignment 1\code\Q3_Dynamic system optim
+           al problem.gms
+Output     C:\Users\jiaweil9\Documents\gamsdir\projdir\Q3_Dynamic system optimal
+           problem.lst
